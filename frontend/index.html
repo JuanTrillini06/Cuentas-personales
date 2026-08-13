@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Gastos - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container" style="max-width: 500px; margin-top: 10vh;">
+        <div class="text-center mb-1">
+            <h2>Gestor Personal de Gastos</h2>
+            <p style="color: var(--text-muted)">Inicia sesión o regístrate para continuar</p>
+        </div>
+
+        <!-- Login Form -->
+        <div class="card" id="loginCard">
+            <h3>Iniciar Sesión</h3>
+            <form id="loginForm" class="mt-1">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Contraseña</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+                <div id="loginError" style="color: var(--danger); margin-bottom: 10px; display: none;"></div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Ingresar</button>
+            </form>
+            <div class="text-center mt-1">
+                <a href="#" id="showRegister" style="color: var(--primary);">¿No tienes cuenta? Regístrate</a>
+            </div>
+        </div>
+
+        <!-- Register Form -->
+        <div class="card" id="registerCard" style="display: none;">
+            <h3>Registrarse</h3>
+            <form id="registerForm" class="mt-1">
+                <div class="form-group">
+                    <label for="regFirstName">Nombre</label>
+                    <input type="text" id="regFirstName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regLastName">Apellido</label>
+                    <input type="text" id="regLastName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Contraseña</label>
+                    <input type="password" id="regPassword" class="form-control" required minlength="6">
+                </div>
+                <div id="regError" style="color: var(--danger); margin-bottom: 10px; display: none;"></div>
+                <button type="submit" class="btn btn-success" style="width: 100%;">Crear Cuenta</button>
+            </form>
+            <div class="text-center mt-1">
+                <a href="#" id="showLogin" style="color: var(--primary);">¿Ya tienes cuenta? Inicia sesión</a>
+            </div>
+        </div>
+        
+        <div class="text-center mt-1">
+            <button id="themeToggleBtn" class="btn" style="background: transparent; border: 1px solid var(--border-color);">Alternar Tema 🌓</button>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
