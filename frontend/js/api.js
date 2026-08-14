@@ -1,5 +1,5 @@
 // Configuración global para fetch API
-const API_URL = 'https://cuentas-personales.onrender.com';
+const API_URL = 'https://cuentas-personales.onrender.com/api';
 
 // Obtener token
 const getToken = () => localStorage.getItem('token');
