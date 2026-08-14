@@ -6,7 +6,7 @@ Aplicación web integral para la autogestión de ingresos y egresos de dinero, p
 
 El proyecto está preparado para funcionar en un entorno Fullstack distribuido de forma eficiente:
 
-- **Frontend (Vercel):** [¡Inserta aquí el link de despliegue de Vercel!]
+- **Frontend (Vercel):** Desplegado el FrontEnd
 - **Backend (Render):** Desplegado como API REST.
 - **Base de Datos (Atlas):** Cluster en la nube de MongoDB.
 

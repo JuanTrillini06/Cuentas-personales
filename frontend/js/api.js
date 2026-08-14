@@ -1,5 +1,5 @@
 // Configuración global para fetch API
-const API_URL = 'http://localhost:5000/api'; // Cambiar en prod
+const API_URL = process.env.API_URL;
 
 // Obtener token
 const getToken = () => localStorage.getItem('token');
